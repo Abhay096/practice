@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>UserId</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor="let i of g">
+        <td>{{i.id}}</td>
+        <td>{{i.userId}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.body}}</td>
+    </tr>
+</table>
+
+<p>{{postvar | json}}</p>
+<p>{{putvar | json}}</p>
+<p>{{patchvar | json}}</p>
+<p>{{deletevar}}</p>
