@@ -34,7 +34,7 @@ import { RouterModule } from '@angular/router';
         component: AppComponent
       },
       {
-        path: 'routing1',
+        path: 'routing1/:id',
         component: Routing1Component
       },
       {

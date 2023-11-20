@@ -20,9 +20,11 @@ export class AppComponent {
   title = 'practice';
   list: any = [1, 2, 3, 4, 5, 6]
   normalobj = new NormalService()
+
   constructor(public diobj: DiService) {
     console.log(this.normalobj.name);
     console.log(diobj.name);
+
   }
   f1(temp: any) {
     alert(`Clicked ${temp}`)
@@ -35,5 +37,8 @@ export class AppComponent {
     console.log(t);
     this.show = false
     this.visible = true
+  }
+  f4(j: any) {
+    console.log(j);
   }
 }

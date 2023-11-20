@@ -1,1 +1,8 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+/* @import "~bootstrap/dist/css/bootstrap.css" */
+a {
+    color: red;
+}
+
+a.active {
+    background-color: green;
+}

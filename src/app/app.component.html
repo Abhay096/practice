@@ -24,7 +24,7 @@
 <p>{{2 | mypipe:200:300}}</p>
 
 <!--Directives-->
-<p *ngIf="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quibusdam?</p>
+<h1 *ngIf="show">ghoda</h1>
 <li *ngFor="let i of list">{{i}}</li>
 <p [hidden]="visible">Lorem, ipsum.</p>
 <div [ngSwitch]="day">
@@ -128,5 +128,16 @@
 
 <!--Routing-->
 <a routerLink="routing1">R1</a><br>
-<a routerLink="routing2">R2</a><br>
+<a routerLink="routing2" routerLinkActive="active">R2</a><br>
 <router-outlet></router-outlet>
+
+<!-- <form #form="ngForm">
+  <input type="text" #t="ngModel" ngModel required minlength="5" name="t"><br>
+  <input type="text">
+  <div *ngIf="t.touched && t.invalid">
+    <div *ngIf="t.errors?.['required']">This is required</div>
+    <div *ngIf="t.errors?.['minlength']">kjkaldka</div>
+  </div>
+  <input type="submit" value="submit" [disabled]="form.invalid">
+</form>
+<button (click)="f4($event)">jjjjjj</button> -->
